@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <style type="text/css">
+ 
+            /* ヘッダー
+            ー---------------------------------------------------------------*/
+            .header {
+              margin: 0px;
+              padding: 10px 10px;
+              background: #9999ff;
+              width: 100%;
+              min-width: 100px;
+              position: fixed;
+              top: 0px;
+            }
+            html{
+              padding: 0px;
+            }
+ 
+            /* サイドバー
+            ー---------------------------------------------------------------*/
+@media screen and (max-width: 699px)
+{
+            #modal{display:none;  }
+}
+@media screen and (min-width: 700px){
+  #modal{margin-top: 50px;
+    background-color: #222;
+    color: #fff;
+    width: 200px;
+    float: left;
+  }
+
+}
+ 
+            /* スライドページ
+           ー---------------------------------------------------------------*/
+            #pageslide{
+              /*ThesestylesMUSTbeincluded.Donotchange.*/
+              display:none; 
+              position:absolute; 
+              position:fixed; 
+              top:0; 
+              height:100%; 
+              z-index:999999; 
+              /*Specifythewidthofyourpageslidehere*/
+              width:180px; 
+              padding:20px; 
+              /*The sestylesareoptional,anddescribehowthepageslidewilllook*/
+              background-color:#333; 
+              color:#FFF; 
+              -webkit-box-shadow:inset005px5px#222;
+              -moz-shadow:inset005px5px#222;
+              box-shadow:inset005px5px#222; }
+ 
+            .wow{
+              padding-top: 50px;
+              float: left;
+            }
+            body{
+              margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#modal" class="second open">【●】</a> !!MENUE!!
+        </header>
+        <div id="modal">
+            <h2>メニュー</h2>
+            <p>TOP</p>
+            <a href="test.html">メニュー1</a>
+            <p>メニュー2</p>
+            <p>メニュー3</p>
+            <p>メニュー4</p>
+            <p>メニュー5</p>
+            <p><a href="javascript:$.pageslide.close()">Close</a></p>
+        </div>
+        <div class="wow">
+          1<br>2<br>3<br>4<br>5<br>6<br>
+          1<br>2<br>3<br>4<br>5<br>6<br>
+          1<br>2<br>3<br>4<br>5<br>6<br>
+          1<br>2<br>3<br>4<br>5<br>6<br>
+          1<br>2<br>3<br>4<br>5<br>6<br>
+        </div>
+ 
+        <script type="text/javascript" src="../plugins/jquery-1.10.1.js"></script>
+        <script type="text/javascript" src="../plugins/srobbin-jquery-pageslide-d00801f/jquery.pageslide.min.js"></script>
+        <script>
+            $(".first").pageslide();
+            $(".second").pageslide({direction: "right", modal: true});
+        </script>
+    </body>
+</html>

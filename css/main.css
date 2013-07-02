@@ -1,0 +1,168 @@
+body{
+
+  background-color: #ffefee;
+  min-height: 500px;
+}
+
+.side-bar .title{
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.side-bar a{
+  color: #ffffff;
+}
+
+
+.side-bar .active{
+  background-color: #ffefee;
+  color: #662222;
+}
+
+.middle-unit .content-unit{
+  background-color: #ffffff;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-style: solid;
+  padding: 0px 10px;
+}
+
+
+
+
+.reserve .status{
+  color: #ffffff;
+  padding: 1px 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.reserve .st-waiting{
+  background-color: #7777aa;
+}
+.reserve .st-ng{
+  background-color: #cc7777;
+}
+.reserve .st-ok{
+  background-color: #77aa77;
+}
+
+
+
+
+
+@media screen and (max-width: 699px)
+{
+
+  .left-unit{
+    display: none;
+  }
+
+  .side-bar{
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 60px;
+    height: 100%;
+    min-height: 500px;
+    background-color: #662222;
+    float: left;
+    color: #ffffff;
+    list-style-type: none;
+    overflow-y: auto;
+    overflow-x: visible;
+    z-index: 100;
+  }
+
+  .side-bar .title{
+    font-size: 10px;
+  }
+
+  .side-bar .large-icon{
+    font-size: 40px;
+  }
+  .side-bar .unit{
+    text-align: center;
+    padding: 5px 0px;
+  }
+
+  .middle-unit{
+    position: absolute;
+    right: 0px;
+    left: 70px;
+    display: block;
+
+    float: left;
+    padding-right: 3px;
+    padding-top: 10px;
+   
+  }
+}
+
+@media screen and (min-width: 700px)
+{
+  .side-bar{
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100px;
+    height: 100%;
+    min-height: 500px;
+    background-color: #662222;
+    float: left;
+    color: #ffffff;
+    list-style-type: none;
+    overflow-y: auto;
+    overflow-x: visible;
+    z-index: 100;
+  }
+
+
+
+  .side-bar .unit{
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+
+  .side-bar .large-icon{
+    font-size: 65px;
+  }
+
+
+
+
+  .middle-unit{
+    position: absolute;
+    right: 220px;
+    left: 120px;
+    display: block;
+
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+   
+  }
+
+
+  .left-unit{
+    position: absolute;
+    right: 0px;
+    min-width: 200px;
+    padding: 70px 0px;
+    padding-left: 10px;
+    height: 100%;
+    background-color: #331111;
+  }
+
+  .left-unit .info{
+    width: 90%;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-style: solid;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+  }
+} 
